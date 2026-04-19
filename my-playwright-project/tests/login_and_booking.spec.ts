@@ -26,9 +26,9 @@ test.describe('Auth & Booking', () => {
     await expect(page.getByText('invalid username or password')).toBeVisible();
   });
 
-  test('TC-AUTO-003: Access MyBookings without login', async ({ page }) => {
-    await page.goto(`${baseURL}/mybookings`);
-    await expect(page).toHaveURL(/login/);
+  test('TC-AUTO-003: Access Booking without login', async ({ page }) => {
+  await page.goto(`${baseURL}/booking`);
+  await expect(page).toHaveURL(/login/);
   });
 
   test('TC-AUTO-004: Booking Court Success', async ({ page, baseURL }) => {
