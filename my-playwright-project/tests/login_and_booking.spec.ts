@@ -59,7 +59,7 @@ const finalBookingBtn = page.getByRole('button', { name: 'จองสนาม'
     
   });
 
-test('TC-005: Booking Validation - Missing Time Slot', async ({ page, baseURL }) => {
+test('TC-AUTO-005: Booking Validation - Missing Time Slot', async ({ page, baseURL }) => {
     await page.goto(`${baseURL}/login`);
     await page.getByPlaceholder('Username').fill('661211319');
     await page.getByPlaceholder('Password').fill('users002');
